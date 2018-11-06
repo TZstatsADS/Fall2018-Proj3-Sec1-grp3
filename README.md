@@ -1,5 +1,5 @@
 # Project: Can you unscramble a blurry image? 
-![image](figs/example.png)
+
 
 ### [Full Project Description](doc/project3_desc.md)
 
@@ -13,9 +13,11 @@ Term: Fall 2018
 	+ Peilin Li
 	+ Shiqing Long
 
-+ Project summary: In this project, we created a classification engine for enhance the resolution of images. 
++ Project summary: In this project, we worked on assessing predictive models that improves on the gradient boosted stumps baseline model, hence allowing us to turn a low resolution image into a high resolution image. Ultimately, the process of model selection led to finding that the best model was XgBoost.
 	
 **Contribution statement**: ([default](doc/a_note_on_contributions.md))
+Project leader
+Main contributor
 Equal contribution
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
