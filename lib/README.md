@@ -2,5 +2,5 @@
 
 ### Code lib Folder
 
-The lib directory contains various files with function definitions and code.
+The lib directory contains the code files of baseline model and xgboost model including feature, train, test, superesolution. Xgboost model has a supply file which is used for tuning parameter.
 
