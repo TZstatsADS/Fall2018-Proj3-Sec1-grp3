@@ -23,7 +23,8 @@ Term: Fall 2018
 + Major contributor:
 	+ Xiaoyi Li, Shiqing Long
 + Equal contribution：
-	+ Ghada Jerfel, Peilin Li
+	+ Ghada Jerfel: coded the linear regression model, edited the readme file, and prepared the presentation slides.
+	+ Peilin Li
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
