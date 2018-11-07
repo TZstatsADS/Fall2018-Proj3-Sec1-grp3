@@ -1,4 +1,0 @@
-1. 见面以及排练presentation
-2. 改代码（2人Improve, 3人Baseline）
-3. 完成readme file
-4. 
