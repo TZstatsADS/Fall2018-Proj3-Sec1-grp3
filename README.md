@@ -19,7 +19,7 @@ Term: Fall 2018
 	
 **Contribution statement**: ([default](doc/a_note_on_contributions.md))
 + Project leader:
-	+ Yingqiao Zhang
+	+ Yingqiao Zhang：Designed and organized the structure of the whole project. Built and optimized the baseline model.                             Tuning parameters for the xgboost model.
 + Major contributor:
 	+ Xiaoyi Li, Shiqing Long
 + Equal contribution：
