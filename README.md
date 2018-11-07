@@ -29,7 +29,7 @@ Term: Fall 2018
 	+ Yingqiao Zhang：Designed and organized the structure of whole project. Built and optimized the baseline model. Tuning parameters for the xgboost model. 
 + Major contributor:
 	+ Xiaoyi Li: Build xgboost model and random forest model. Tuning parameters for the xgboost model and random forest model.
-	+ Shiqing Long
+	+ Shiqing Long: Search methods to improve the baseline models. Applied svm as advanced model to improve the performance, do cv and calculate PSNR and MSE. Also prepared presentation slide.
 + Equal contribution：
 	+ Ghada Jerfel: built the linear regression model, edited the readme file, as well as made the presentation slides.
 	+ Peilin Li: Code feature.R and superResolution.R files, edit Github and make the presentation slides.
