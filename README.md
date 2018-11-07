@@ -31,7 +31,7 @@ Term: Fall 2018
 	+ Xiaoyi Li: Build xgboost model and random forest model. Tuning parameters for the xgboost model and random forest model.
 	+ Shiqing Long
 + Equal contribution：
-	+ Ghada Jerfel, 
+	+ Ghada Jerfel: built the linear regression model, edited the readme file, as well as made the presentation slides.
 	+ Peilin Li: Code feature.R and superResolution.R files, edit Github 
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
