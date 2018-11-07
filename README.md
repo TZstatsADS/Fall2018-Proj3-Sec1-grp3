@@ -15,11 +15,11 @@ Term: Fall 2018
 
 + Project summary: 
 	+ In this project, we worked on assessing predictive models that improves on the gradient boosted stumps baseline model, hence allowing us to turn a low resolution image into a high resolution image. Ultimately, the process of model selection led to finding that the best model was XgBoost.
-	+ Firstly, we do model training using features of several samples extracted from low-resolution images and high-resolution images. For each sample, we extract features from 8 neighbor pixels near it in low-resolution images and features from 4 corresponding pixels in high-solution images, save them in 2 feature matrices, respectively. Then we train our models using these features and save parameters of the model with best performance.
+	+ First, we do model training using features of several samples extracted from low-resolution images and high-resolution images. For each sample, we extract features from the nearest 8 neighbor pixels in the low-resolution images and extract features from 4 corresponding pixels in high-resolution images, then we save them in 2 feature matrices, respectively. Then we train our models using these features and save parameters of the model with best performance.
 	![screenshot](model_baseline/doc/doc1.png)
-	+ Then we tried to build 5 models, including GBM, SVM, XgBoost, Random Forest, Neural Network. In model assessment part, XgBoost outperforms other models so we choose it as our proposed model:
+	+ Then we try to build 5 models, including GBM, SVM, XgBoost, Random Forest, Neural Network, Linear Regression. In model assessment part, XgBoost outperforms other models so we choose it as our proposed model:
 	![screenshot](model_baseline/doc/doc2.png)
-	+ Comparing with the baseline model, XgBoost model improves in both efficiency and accuracy parts:
+	+ Comparing with the baseline model, XgBoost model improves with respect to both running time and image quality:
 	![screenshot](model_baseline/doc/doc3.png)
 	
 	
