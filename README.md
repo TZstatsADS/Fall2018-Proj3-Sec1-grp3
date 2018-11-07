@@ -32,7 +32,7 @@ Term: Fall 2018
 	+ Shiqing Long
 + Equal contribution：
 	+ Ghada Jerfel: built the linear regression model, edited the readme file, as well as made the presentation slides.
-	+ Peilin Li: Code feature.R and superResolution.R files, edit Github 
+	+ Peilin Li: Code feature.R and superResolution.R files, edit Github and make the presentation slides.
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
