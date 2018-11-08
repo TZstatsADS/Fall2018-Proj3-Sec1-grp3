@@ -44,5 +44,5 @@ proj/
 ├── figs/
 └── output/
 ```
-
+Both baseline and xgboost models can be implemented separately by choosing the folder you want to use.
 Please see each subfolder for a README file.
