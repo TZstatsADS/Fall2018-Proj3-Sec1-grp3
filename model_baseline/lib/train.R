@@ -6,7 +6,7 @@
 ### Project 3
 
 
-train <- function(dat_train, label_train){
+train <- function(dat_train, label_train, par=NULL){
   
   ### Train a Gradient Boosting Model (GBM) using processed features from training images
   
@@ -22,7 +22,11 @@ train <- function(dat_train, label_train){
   modelList <- list()
   
   ### Train with gradient boosting model
-  
+  if(is.null(par)){
+    select_trees <- 1
+  } else {
+    select_trees <- par$depth
+  }
   ### the dimension of response arrat is * x 4 x 3, which requires 12 classifiers
   ### this part can be parallelized
   
@@ -32,9 +36,9 @@ train <- function(dat_train, label_train){
    featMat <- dat_train[, , c2]
     labMat <- label_train[, c1, c2]
     fit_gbm <- gbm.fit(x=featMat, y=labMat,
-                       n.trees=100,
+                       n.trees=select_trees,
                        distribution="gaussian",
-                       interaction.depth=1, 
+                       interaction.depth=2, 
                        bag.fraction = 0.5,
                        verbose=FALSE)
     best_iter <- gbm.perf(fit_gbm, method="OOB", plot.it = FALSE)
