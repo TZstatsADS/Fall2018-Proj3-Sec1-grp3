@@ -91,13 +91,12 @@ superResolution <- function(LR_dir, HR_dir, modelList){
     HRMat_3[2*HR_row-1, 2*HR_col, ]<- HRMat_2[, 2, ]
     HRMat_3[2*HR_row-1, 2*HR_col-1, ]<- HRMat_2[, 1, ]
     
-    
+   
     ### Set the path to save HR images
     HR_savepath<- paste0(HR_dir,  "img_", sprintf("%04d", i), ".jpg")
     writeImage(Image(HRMat_3, colormode="Color"), HR_savepath)
-    MSE <- MSE + sum((HRMat_3 - imgHR)^2)/length(imgHR)
+    #MSE <- MSE + sum((HRMat_3 - imgHR)^2)/length(imgHR)
   }
-  MSE <- MSE/n_files
-  return(MSE)
+  #MSE <- MSE/n_files
+  #return(MSE)
 }
-

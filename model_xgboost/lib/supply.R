@@ -2,12 +2,12 @@
 supply <- function(featMat,labMat){
  lrn <- makeLearner("regr.xgboost")
  model_Params <- makeParamSet(
-        makeIntegerParam("max_depth",lower=1,upper=10),
-        makeNumericParam("lambda",lower=0.55,upper=0.60),
-        makeNumericParam("eta", lower = 0.001, upper = 0.5),
-        makeNumericParam("subsample", lower = 0.10, upper = 0.80),
-        makeNumericParam("min_child_weight",lower=1,upper=5),
-        makeNumericParam("colsample_bytree",lower = 0.2,upper = 0.8)
+        makeIntegerParam("max_depth",lower=3,upper=4),
+        makeNumericParam("lambda",lower=0.58,upper=0.60),
+        makeNumericParam("eta", lower = 0.250, upper = 0.30),
+        makeNumericParam("subsample", lower = 0.50, upper = 0.55),
+        makeNumericParam("min_child_weight",lower=3,upper=4),
+        makeNumericParam("colsample_bytree",lower = 0.4,upper = 0.5)
     )
  
  cv_folds <- makeResampleDesc("CV", iters = 3)
@@ -23,8 +23,3 @@ supply <- function(featMat,labMat){
                                                      show.info = FALSE)
  return(tuned_model)
 }
-supply(featMat,labMat)
- #Tune result:
- #Op. pars: max_depth=4; lambda=0.584; eta=0.256; subsample=0.522; min_child_weight=3.01; colsample_bytree=0.485;
-
- 

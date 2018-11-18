@@ -98,7 +98,7 @@ Call the train model and test model from library.
 ```{r loadlib}
 source("../lib/train.R")
 source("../lib/test.R")
-#source('../lib/supply.R')
+source('../lib/supply.R')
 ```
 
 
@@ -127,9 +127,10 @@ tm_test=NA
 if(run.test){
   #load(file="../output/fit_train.RData")
  
-  tm_test <- system.time(MSE<-superResolution(test_LR_dir, test_HR_dir, fit_train))
+  tm_test <- system.time(superResolution(test_LR_dir, test_HR_dir, fit_train))
+  #tm_test <- system.time(MSE<-superResolution(test_LR_dir, test_HR_dir, fit_train)) 
 }
-PSNR <- 20*log(1,10)-10*log(MSE,10)
+#PSNR <- 20*log(1,10)-10*log(MSE,10)
 ```
 
 ### Summarize Running Time
@@ -139,7 +140,7 @@ cat("Time for constructing training features=", tm_feature_train[1], "s \n")
 #cat("Time for constructing testing features=", tm_feature_test[1], "s \n")
 cat("Time for training model=", tm_train[1], "s \n")
 cat("Time for super-resolution=", tm_test[1], "s \n")
-cat('MSE is',MSE,'\n')
-cat('PSNR is',PSNR)
+#cat('MSE is',MSE,'\n')
+#cat('PSNR is',PSNR)
 ```
 
